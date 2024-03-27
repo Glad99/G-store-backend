@@ -1,12 +1,15 @@
 import express from "express";
 import cors from "cors"
+import bodyParser from "body-parser"
 import mongoose from "mongoose";
 
 
 const app = express();
 
+
 //middleware
 app.use(express.json());
+app.use (bodyParser.json())
 app.use(cors());
 
 const PORT = process.env.PORT || 4000
@@ -24,5 +27,6 @@ app.listen(PORT, ()=>{
 })
 
 
+export default app
 
 
