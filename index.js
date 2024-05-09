@@ -8,7 +8,7 @@ import dotenv from "dotenv/config.js";
 const app = express();
 // Allow requests from the Vercel domain
 const corsOptions = {
-    origin: 'https://g-store-frontend.vercel.app',
+    origin: 'https://g-store-frontend.vercel.app/',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
